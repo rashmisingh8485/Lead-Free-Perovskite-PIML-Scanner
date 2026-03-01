@@ -1,5 +1,7 @@
+# AI-Perov-Screen: Physics-Informed ML Tool for Screening Lead-Free Perovskites
 # AI-Driven Discovery of Lead-Free Sn-Ge Perovskites
-
+**Author:** Rashmi Singh  
+**ORCID:** [0000-0002-4521-6820](https://orcid.org/0000-0002-4521-6820)
 ### 🔬 Project Overview
 This research focuses on the computational screening of toxicity-free halide perovskites using **Physics-Informed Machine Learning**. We explored over 1,000+ compositions in the Sn-Ge mixed cation space to identify candidates that balance high stability with optimal solar efficiency.
 
