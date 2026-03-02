@@ -44,7 +44,7 @@ User Accessibility- Researchers can use the tool by just providing a CSV file, w
 # Stability Analysis
 The screening tool identifies stable regions based on the Goldschmidt Tolerance Factor.
 
-![Stability analysis and feature importance of the Sn-Ge perovskite space. \label{Figure1}](Results/Figure1_Flowchart.png)
+![Stability analysis and feature importance of the Sn-Ge perovskite space. \label{fig:Flowchart}](Results/Figure1_Flowchart.png)
 
 # Illustrative Example
 To evaluate the performance of this tool, I tested it on more than 1,000 new compounds retrieved from the Materials Project database [7]. The predictions in the results are very close to the experimental values. The MAE Mean Absolute Error comes out to be only 28.2 meV which is quite good for the formation energy prediction. It refers that the difference in the actual and predicted values is too small.  This model can be trusted for fast screening die to this low error. This tool helped to identify many stable Sn-Ge based compositions that are eligible candidates to replace toxic lead in solar-cells. 
@@ -52,7 +52,7 @@ As an illustrative example, a user input of Cs_Fraction = 0.81 and Sn_Fraction =
 # Performance and Validation
 The model's predictive accuracy was validated using a parity plot, comparing the DFT-calculated bandgaps with machine learning predictions.
 
-![Parity plot showing the correlation between predicted and actual bandgaps. \label{Figure2}](Results/Figure2_ParityPlot.png)
+![Parity plot showing the correlation between predicted and actual bandgaps. \label{fig:ParityPlot}](Results/Figure2_ParityPlot.png)
 
 
 # Acknowledgements
