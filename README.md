@@ -20,7 +20,7 @@ novel_perovskite_space.csv: Dataset of 1,000+ lead-free compositions.
 requirements.txt: List of dependencies.
 
 ### 🛠️ How to Run
-1. Clone the repo: `git clone https://github.com/rashmisingh8485/repo-name.git`
+1. Clone the repo: `git clone https://github.com/rashmisingh8485/Lead-Free-Perovskite-PIML-Scanner.git`
 2. Install dependencies: `pip install -r requirements.txt`
 3. Run the model: `python main.py`
 
