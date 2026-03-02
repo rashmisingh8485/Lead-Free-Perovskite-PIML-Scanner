@@ -1,5 +1,5 @@
+%%writefile /content/Lead-Free-Perovskite-PIML-Scanner/test_script.py
 import numpy as np
-# Dono functions ko import kar rahe hain
 from utils import get_tolerance_factor, get_octahedral_factor
 
 def test_stability_filters():
