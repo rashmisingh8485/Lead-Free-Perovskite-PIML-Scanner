@@ -40,14 +40,10 @@ This module is the main entry point of the software. The user need not interact 
 The tool processes it and outputs a list of stable compositions based on predicted formation energy or stability thresholds. The tool follows a modular architecture where main.py acts as the orchestrator, importing physics logic from utils.py and machine learning routines from model_engine.py  
 
 This modular structure is significant due to the reasons:  
-
 Clarity- Each file has a single, well-defined role.  
-
 Scalability- New physics-descriptors or other ML models can be added without redrafting the whole system.  
-
 Maintainability- Bugs or developments in one module do not affect the others significantly.  
-
-User Accessibility- Researchers can use the tool by just providing a CSV file, without needing deep coding knowledge.
+User Accessibility- Researchers can use the tool by just providing a CSV file, without needing deep coding knowledge.  
 # Stability Analysis
 The screening tool identifies stable regions based on the Goldschmidt Tolerance Factor.
 
