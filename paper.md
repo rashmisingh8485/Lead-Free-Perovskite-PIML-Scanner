@@ -41,11 +41,18 @@ Clarity- Each file has a single, well-defined role.
 Scalability- New physics-descriptors or other ML models can be added without redrafting the whole system.
 Maintainability- Bugs or developments in one module do not affect the others significantly.
 User Accessibility- Researchers can use the tool by just providing a CSV file, without needing deep coding knowledge.
+# Stability Analysis
+The screening tool identifies stable regions based on the Goldschmidt Tolerance Factor.
 
+![Stability analysis and feature importance of the Sn-Ge perovskite space. \label{fig:stability}](Results/Figure1_Flowchart.png)
 
 # Illustrative Example
 To evaluate the performance of this tool, I tested it on more than 1,000 new compounds retrieved from the Materials Project database [7]. The predictions in the results are very close to the experimental values. The MAE Mean Absolute Error comes out to be only 28.2 meV which is quite good for the formation energy prediction. It refers that the difference in the actual and predicted values is too small.  This model can be trusted for fast screening die to this low error. This tool helped to identify many stable Sn-Ge based compositions that are eligible candidates to replace toxic lead in solar-cells. 
 As an illustrative example, a user input of Cs_Fraction = 0.81 and Sn_Fraction = 0.16 produces a predicted Bandgap of 1.82 eV with an output of 'STABLE' status. It represents the tool's ability to identify high-efficiency solar candidates. Overall, this tool is capable to speed up the exploration of safe and stable materials for solar-cell technology.
+# Performance and Validation
+The model's predictive accuracy was validated using a parity plot, comparing the DFT-calculated bandgaps with machine learning predictions.
+
+![Parity plot showing the correlation between predicted and actual bandgaps. \label{fig:parity}](Results/Figure2_ParityPlot.png)
 
 
 # Acknowledgements
