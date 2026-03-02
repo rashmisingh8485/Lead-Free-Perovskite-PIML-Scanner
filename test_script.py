@@ -1,14 +1,22 @@
 import numpy as np
+# Dono functions ko import kar rahe hain
+from utils import get_tolerance_factor, get_octahedral_factor
 
-from utils import get_tolerance_factor
-
-def test_stability():
-    # Test values: Cs=1.88, Sn=1.1, X=2.2
-    t = get_tolerance_factor(1.88, 1.1, 2.2)
+def test_stability_filters():
+    # Test values for a typical perovskite (e.g., CsSnI3)
+    r_a, r_b, r_x = 1.88, 1.10, 2.20
     
-    # Check if calculation is correct (Expect approx 0.94)
-    assert 0.8 <= t <= 1.1, f"Stability logic test failed! Calculated t = {t}"
-    print(f"Tests passed successfully! Tolerance Factor: {t:.4f}")
+    # 1. Test Tolerance Factor
+    t = get_tolerance_factor(r_a, r_b, r_x)
+    assert 0.8 <= t <= 1.1, f"Tolerance factor test failed! Got {t}"
+    print(f"✅ Tolerance Factor Test Passed: {t:.4f}")
+    
+    # 2. Test Octahedral Factor
+    mu = get_octahedral_factor(r_b, r_x)
+    assert mu > 0.4, f"Octahedral factor test failed! Got {mu}"
+    print(f"✅ Octahedral Factor Test Passed: {mu:.4f}")
 
 if __name__ == "__main__":
-    test_stability()
+    print("Starting automated tests...")
+    test_stability_filters()
+    print("All physics-based filters are working correctly!")
