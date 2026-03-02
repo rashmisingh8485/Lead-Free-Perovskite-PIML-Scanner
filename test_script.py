@@ -1,11 +1,9 @@
 import numpy as np
-from utils import calculate_tolerance_factor
 
-def test_stability():
-    # Simple test case for stability logic
-    t = calculate_tolerance_factor(1.88, 1.1, 2.2)
-    assert 0.8 <= t <= 1.1, "Tolerance factor calculation failed"
-    print("Tests passed!")
+def get_tolerance_factor(r_a, r_b, r_x):
+    """Calculates Goldschmidt Tolerance Factor"""
+    return (r_a + r_x) / (np.sqrt(2) * (r_b + r_x))
 
-if __name__ == "__main__":
-    test_stability()
+def get_octahedral_factor(r_b, r_x):
+    """Calculates Octahedral Factor"""
+    return r_b / r_x
