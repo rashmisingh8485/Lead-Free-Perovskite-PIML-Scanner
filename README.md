@@ -26,3 +26,14 @@ requirements.txt: List of dependencies.
 
 ### 📝 Status
 *Currently under research/preparation for journal submission.*
+## Testing
+To verify the core physics-based filters (Goldschmidt Tolerance Factor and Octahedral Factor), an automated test script is provided.
+
+### Prerequisites
+- Python 3.x
+- NumPy
+
+### Running the Test
+Execute the following command in the terminal from the root directory:
+```bash
+python test_script.py
