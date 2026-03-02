@@ -11,9 +11,10 @@ This research focuses on the computational screening of toxicity-free halide per
 * **Sustainability:** Proposed candidates reduce environmental toxicity by **80%** compared to lead-based cells.
 
 ### 📁 Repository Structure
-* `/data`: Contains the curated dataset of 1,000+ lead-free compositions.
-* `/models`: Trained Random Forest Regressor models.
-* `/results`: High-resolution Parity Plots and Feature Importance charts.
+main.py: Interactive screening tool.
+utils.py & model_engine.py: Physics logic and ML training modules.
+novel_perovskite_space.csv: Dataset of 1,000+ lead-free compositions.
+requirements.txt: List of dependencies.
 
 ### 🛠️ How to Run
 1. Clone the repo: `git clone https://github.com/rashmisingh8485/repo-name.git`
