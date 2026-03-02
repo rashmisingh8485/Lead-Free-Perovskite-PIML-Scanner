@@ -1,6 +1,8 @@
 # AI-Perov-Screen: Physics-Informed ML Tool for Screening Lead-Free Perovskites
 # AI-Driven Discovery of Lead-Free Sn-Ge Perovskites
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18831726.svg)](https://doi.org/10.5281/zenodo.18831726)
+
 **Author:** Rashmi Singh  
 **ORCID:** [0000-0002-4521-6820](https://orcid.org/0000-0002-4521-6820)
 ### 🔬 Project Overview
