@@ -28,7 +28,7 @@ Many large and powerful libraries like pymatgen @ong2013python and matminer @war
 
 
 # Implementation and Architecture
-This software is divided into 3 main parts using a modular structure. Each part is having a clear and independent responsibility. The system is well organized and easy to extend in the future. The software is built using Python and leverages standard scientific libraries such as Pandas and Scikit-learn @pedregosa2011scikit and Matplotlib [6] for data handling, model implementation, and visualization.  
+This software is divided into 3 main parts using a modular structure. Each part is having a clear and independent responsibility. The system is well organized and easy to extend in the future. The software is built using Python and leverages standard scientific libraries such as Pandas @virtanen2020scipy and Scikit-learn @pedregosa2011scikit and Matplotlib @hunter2007matplotlib for data handling, model implementation, and visualization.  
 
 1. utils.py – Physics Layer
 This is the module with core physics-based logic. It calculates descriptors like tolerance factor with the help of ionic radii and other crystallographic parameters. By the incorporation of these physics-based descriptors, the tool certifies that the produced features are not just statistical-based. This improves interpretability with the decrease of unphysical predictions.  
@@ -56,7 +56,7 @@ The screening tool identifies stable regions based on the Goldschmidt Tolerance 
 ![**Figure 1:**Stability analysis and feature importance of the Sn-Ge perovskite space. \label{fig:Flowchart}](Results/Figure1_Flowchart.png)
 
 # Illustrative Example
-To evaluate the performance of this tool, I tested it on more than 1,000 new compounds retrieved from the Materials Project database [7]. The predictions in the results are very close to the experimental values. The MAE Mean Absolute Error comes out to be only 28.2 meV which is quite good for the formation energy prediction. It refers that the difference in the actual and predicted values is too small.  This model can be trusted for fast screening die to this low error. This tool helped to identify many stable Sn-Ge based compositions that are eligible candidates to replace toxic lead in solar-cells.   
+To evaluate the performance of this tool, I tested it on more than 1,000 new compounds retrieved from the Materials Project database @jain2013commentary. The predictions in the results are very close to the experimental values. The MAE Mean Absolute Error comes out to be only 28.2 meV which is quite good for the formation energy prediction. It refers that the difference in the actual and predicted values is too small.  This model can be trusted for fast screening die to this low error. This tool helped to identify many stable Sn-Ge based compositions that are eligible candidates to replace toxic lead in solar-cells.   
 
 As an illustrative example, a user input of Cs_Fraction = 0.81 and Sn_Fraction = 0.16 produces a predicted Bandgap of 1.82 eV with an output of 'STABLE' status. It represents the tool's ability to identify high-efficiency solar candidates. Overall, this tool is capable to speed up the exploration of safe and stable materials for solar-cell technology.
 # Performance and Validation
