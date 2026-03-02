@@ -18,7 +18,7 @@ This research focuses on the computational screening of toxicity-free halide per
 ### 🛠️ How to Run
 1. Clone the repo: `git clone https://github.com/rashmisingh8485/repo-name.git`
 2. Install dependencies: `pip install -r requirements.txt`
-3. Run the model: `python perovskite_ai_model.py`
+3. Run the model: `main.py`
 
 ### 📝 Status
 *Currently under research/preparation for journal submission.*
