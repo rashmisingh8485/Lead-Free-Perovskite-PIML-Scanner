@@ -19,7 +19,7 @@ requirements.txt: List of dependencies.
 ### 🛠️ How to Run
 1. Clone the repo: `git clone https://github.com/rashmisingh8485/repo-name.git`
 2. Install dependencies: `pip install -r requirements.txt`
-3. Run the model: `main.py`
+3. Run the model: `python main.py`
 
 ### 📝 Status
 *Currently under research/preparation for journal submission.*
