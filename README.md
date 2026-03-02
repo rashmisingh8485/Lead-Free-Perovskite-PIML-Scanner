@@ -1,4 +1,4 @@
-# AI-Perov-Screen: Physics-Informed ML Tool for Screening Lead-Free Perovskites
+# Lead-Free-Perovskite-PIML-Scanner: Physics-Informed ML Tool for Rapid Solar Screening
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18831726.svg)](https://doi.org/10.5281/zenodo.18831726)
 
