@@ -1,13 +1,14 @@
 ---
----
 title: 'Lead-Free-Perovskite-PIML-Scanner: A Python package for rapid screening of Sn-Ge halide perovskites'
 authors:
   - name: Rashmi Singh
     orcid: 0000-0002-4521-6820
     affiliation: 1
 affiliations:
-  - name: Department of Physics, IAH, GLA University, Mathura, India
+  - name: Department of Physics, GLA University, Mathura, India
     index: 1
+date: 2 March 2026
+bibliography: paper.bib
 ---
 date: 2 March 2026
 bibliography: paper.bib
