@@ -18,18 +18,16 @@ bibliography: paper.bib
 ---
 
 # Summary
-This software is a Python-based tool designed to evaluate the stability of lead-free (Sn-Ge) perovskites. Lead-based solar cells are highly toxic; therefore, Sn-Ge mixed cations are explored as sustainable alternatives. This tool integrates Physics-Informed Machine Learning (PIML) by combining Random Forest Regressors with geometric descriptors like the Goldschmidt Tolerance Factor to predict stable compositional combinations.
+This software is a Python-based tool designed to evaluate the stability of lead-free (Sn-Ge) perovskites. Lead-based solar cells are highly toxic; therefore, Sn-Ge mixed cations are explored as sustainable alternatives. This tool combines Machine Learning with the rules of Physics, specifically the Goldschmidt Tolerance Factor, to predict compositional combinations that are likely to be stable, reducing the need for thousands of lab experiments.
 
 # Statement of Need
-The chemical space for lead-free perovskites is vast, with thousands of potential combinations. Evaluating each through experimental synthesis or high-level Density Functional Theory (DFT) calculations is computationally expensive and time-consuming. While general machine learning toolkits like `matminer` [@ward2018matminer] exist, they often require significant coding expertise. Our tool provides a streamlined, interactive interface specifically tuned for the Sn-Ge space, allowing researchers to perform rapid screening with a focus on structural stability.
+While there is extensive research on lead-free perovskites, their chemical space is enormous. Synthesizing every combination or evaluating them via Density Functional Theory (DFT) would take years. Many existing machine learning tools depend solely on data without incorporating physical principles. Our PIML (Physics-Informed ML) scanner bridges this gap by using a Random Forest Regressor integrated with geometric stability descriptors, enabling researchers to quickly identify stable candidates with optimal bandgaps.
 
 # Implementation and Performance
-The scanner utilizes a dataset of over 1,000 lead-free compositions. The model achieves an $R^2$ score of 0.96 and a Mean Absolute Error (MAE) of 28.2 meV. The core logic uses the tolerance factor ($t$) as a physics-based filter:
-$$t = \frac{r_A + r_X}{\sqrt{2}(r_B + r_X)}$$
-Where $r_A, r_B,$ and $r_X$ are the ionic radii. The tool classifies compounds as 'STABLE' if $0.8 \leq t \leq 1.0$.
+The scanner is trained on a dataset of over 1,000 lead-free compositions. It achieves an $R^2$ score of 0.96 and a Mean Absolute Error (MAE) of 28.2 meV. The tool uses a modular architecture where `utils.py` handles the physics calculations and `model_engine.py` manages the machine learning pipeline.
 
 # Illustrative Example
-A user providing inputs of $Cs_{fraction} = 0.81$ and $Sn_{fraction} = 0.16$ receives a predicted Bandgap of 1.82 eV and a 'STABLE' status. This demonstrates the tool's utility in identifying candidates for high-efficiency, non-toxic solar cells.
+The tool features an interactive interface where users can input chemical fractions. For instance, a user input of `Cs_Fraction = 0.81` and `Sn_Fraction = 0.16` produces a predicted Bandgap of 1.82 eV with a 'STABLE' status. This demonstrates the tool's ability to rapidly screen and identify high-efficiency solar candidates.
 
 # Acknowledgements
 The author thanks GLA University for providing the research facilities and computational resources.
