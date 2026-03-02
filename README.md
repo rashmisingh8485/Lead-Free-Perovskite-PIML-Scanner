@@ -1,5 +1,4 @@
 # AI-Perov-Screen: Physics-Informed ML Tool for Screening Lead-Free Perovskites
-# AI-Driven Discovery of Lead-Free Sn-Ge Perovskites
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18831726.svg)](https://doi.org/10.5281/zenodo.18831726)
 
@@ -22,11 +21,14 @@ requirements.txt: List of dependencies.
 
 ### 🛠️ How to Run
 1. Clone the repo: `git clone https://github.com/rashmisingh8485/Lead-Free-Perovskite-PIML-Scanner.git`
-2. Install dependencies: `pip install -r requirements.txt`
-3. Run the model: `python main.py`
+2. Move into the directory: 'cd Lead-Free-Perovskite-PIML-Scanner'
+3. Install dependencies: `pip install -r requirements.txt`
+4. Run the model: `python main.py`
 
 ### 📝 Status
 *Currently under research/preparation for journal submission.*
+
+
 ## Testing
 To verify the core physics-based filters (Goldschmidt Tolerance Factor and Octahedral Factor), an automated test script is provided.
 
