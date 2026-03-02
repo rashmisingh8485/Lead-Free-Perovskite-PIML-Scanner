@@ -37,3 +37,14 @@ To verify the core physics-based filters (Goldschmidt Tolerance Factor and Octah
 Execute the following command in the terminal from the root directory:
 ```bash
 python test_script.py
+
+###  Status
+*This software is currently submitted to the **Journal of Open Source Software (JOSS)** and is undergoing peer review.*
+
+###  Contributing
+Contributions are welcome! If you'd like to improve the physics logic or ML models, please refer to our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to submit a Pull Request.
+
+### 📜 Citation
+If you use this software in your research, please cite it as follows:
+
+**Singh, R. (2026). Lead-Free-Perovskite-PIML-Scanner: A Python package for rapid screening of Sn-Ge halide perovskites. Journal of Open Source Software (Submitted).**
