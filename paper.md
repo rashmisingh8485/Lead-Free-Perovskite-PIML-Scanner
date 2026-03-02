@@ -1,18 +1,14 @@
 ---
+---
 title: 'Lead-Free-Perovskite-PIML-Scanner: A Python package for rapid screening of Sn-Ge halide perovskites'
-tags:
-  - Python
-  - Physics-Informed Machine Learning
-  - Perovskites
-  - Solar Energy
-  - Materials Science
 authors:
   - name: Rashmi Singh
     orcid: 0000-0002-4521-6820
     affiliation: 1
 affiliations:
-  - name: Department of Physics, Institute of Applied Sciences & Humanities, GLA University, Mathura, India
+  - name: Department of Physics, IAH, GLA University, Mathura, India
     index: 1
+---
 date: 2 March 2026
 bibliography: paper.bib
 ---
@@ -21,7 +17,9 @@ bibliography: paper.bib
 This software is a python-based tool that is designed and developed to check the stability of lead free (Sn-Ge) perovskites. Lead based solar-cells are highly toxic that’s why here, Sn-Ge mixed cations are used instead. This tool combines Machine Learning with the rules of Physics (like Tolerance Factor) and is utilized to predict the compositional combinations that are likely to be stable. That means the researchers do not require to conduct thousands of experiments in the labs.
 
 # Statement of Need
-Nowadays there is extensive research on the lead-free perovskites but their chemical space is very large. If every combination is tried to synthesize in the lab or evaluate each combination by DFT (high-level physics calculation), it would take years to finish the task. Most of the machine learning tools in the market only depend on the data without incorporating any principles of Physics. Henceforth, this PIML (Physics-Informed ML) scanner is developed that is going to use Physics descriptors like Goldschmidt’s Tolerance Factor [@goldschmidt1926] to ensure the stability of the predicted compounds. This tool is going to screen 1,000+ compounds in just couple of seconds with very high prediction accuracy ($R^2=0.96$).
+Nowadays there is extensive research on the lead-free perovskites but their chemical space is very large. If every combination is tried to synthesize in the lab or evaluate each combination by DFT (high-level physics calculation), it would take years to finish the task. Most of the machine learning tools in the market only depend on the data without incorporating any principles of Physics. Henceforth, this PIML (Physics-Informed ML) scanner is developed that is going to use Physics descriptors like Goldschmidt’s Tolerance Factor [@goldschmidt1926] to ensure the stability of the predicted compounds. This tool is going to screen 1,000+ compounds in just couple of seconds with very high prediction accuracy ($R^2=0.96$).  
+Research Impact Statement 
+The Research Impact of this tool lies in its ability to accelerate the discovery of non-toxic solar harvesters. By providing a high-accuracy ($R^2=0.96$) screening interface, it narrows down thousands of candidate materials to a few stable compositions, significantly reducing experimental costs and carbon footprint in perovskite research.
 
 # Statement of Field
 Many large and powerful libraries like pymatgen [@ong2013python] and matminer [@ward2018matminer] are already available but they are designed for very general materials research. They are not precisely augmented for Sn–Ge mixed halide perovskites. For the Sn-Ge mixed halide compositions, there is no dedicated tool to predict formation energy. Researchers require to write scripts with manually choosing descriptors and then integrating machine learning models. This tool specifically optimizes Sn-Ge mixed halide systems. In it physics based descriptors are incorporated into the prediction pipeline. It makes it more meaningful physically instead of being solely data-driven approaches.  Here, in this tool researchers can provide their compositions and get formation energy. They do not require any programming knowledge and any machine learning expertise. This tool is useful for rapid pre-screening before any lab synthesis or any DFT calculations. 
@@ -56,7 +54,9 @@ As an illustrative example, a user input of Cs_Fraction = 0.81 and Sn_Fraction =
 # Performance and Validation
 The model's predictive accuracy was validated using a parity plot, comparing the DFT-calculated bandgaps with machine learning predictions.
 
-![**Figure 2:**Parity plot showing the correlation between predicted and actual bandgaps. \label{fig:ParityPlot}](Results/Figure2_ParityPlot.png)
+![**Figure 2:**Parity plot showing the correlation between predicted and actual bandgaps. \label{fig:ParityPlot}](Results/Figure2_ParityPlot.png)  
+# AI Usage Disclosure
+Generative AI was utilized to refine the language and formatting of this paper. All scientific logic, data analysis, and software implementation were independently developed and verified by the author.
 
 
 # Acknowledgements
