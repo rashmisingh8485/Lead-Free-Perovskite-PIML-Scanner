@@ -5,13 +5,14 @@
 
 **Author:** Rashmi Singh  
 **ORCID:** [0000-0002-4521-6820](https://orcid.org/0000-0002-4521-6820)
-### 🔬 Project Overview
-This research focuses on the computational screening of toxicity-free halide perovskites using **Physics-Informed Machine Learning**. We explored over 1,000+ compositions in the Sn-Ge mixed cation space to identify candidates that balance high stability with optimal solar efficiency.
+### 🔬 Software Overview
+Lead-Free-Perovskite-PIML-Scanner is a specialized Python tool designed for the rapid computational screening of toxicity-free halide perovskites. By integrating Physics-Informed Machine Learning (PIML), the tool allows researchers to predict the thermodynamic stability of over 1,000+ Sn-Ge mixed cation compositions in seconds, bypassing expensive DFT calculations.
 
-### 🚀 Key Highlights
-* **Accuracy:** Achieved an $R^2$ score of **0.96** with a Mean Absolute Error (MAE) of **28.2 meV**.
-* **Physics Logic:** Integrated **Goldschmidt’s Tolerance Factor** as a core geometric descriptor.
-* **Sustainability:** Proposed candidates reduce environmental toxicity by **80%** compared to lead-based cells.
+### 🚀 Core Features
+* **Predictive Engine:**  High-performance Random Forest model trained on lead-free datasets ($R^2=0.96$, **MAE=28.2 meV**).
+* **Physics-Informed Filtering:**  Built-in modules to calculate and filter candidates based on **Goldschmidt’s Tolerance Factor (t)** and **Octahedral Factor (μ)**.
+* **Automated Screening:** Batch-processing capability to scan large composition spaces (like the Sn-Ge cation space) for solar efficiency.
+* **Eco-friendly Design:** Specifically optimized for identifying lead-free alternatives, promoting sustainable photovoltaic research.
 
 ### 📁 Repository Structure
 main.py: Interactive screening tool.
