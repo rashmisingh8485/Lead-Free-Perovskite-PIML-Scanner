@@ -37,7 +37,13 @@ This module has the Random Forest model which is trained on the data of formatio
 3. main.py – User Interface Layer
 This module is the main entry point of the software. The user need not interact with the code and need not comprehend the physics behind or machine learning workflow. The user needs to simply input data in CSV format having compositional details.
 
-The tool processes it and outputs a list of stable compositions based on predicted formation energy or stability thresholds. The tool follows a modular architecture where main.py acts as the orchestrator, importing physics logic from utils.py and machine learning routines from model_engine.py  
+The tool processes it and outputs a list of stable compositions based on predicted formation energy or stability thresholds. The tool follows a modular architecture where main.py acts as the orchestrator, importing physics logic from utils.py and machine learning routines from model_engine.py    
+
+The scanner is trained on a dataset of over 1,000 lead-free compositions. 
+It achieves a high accuracy of $R^2 = 0.96$ and a Mean Absolute Error (MAE) of 28.2 meV.
+
+The core logic uses the tolerance factor ($t$) as a physics-based filter:
+$$t = \frac{r_A + r_X}{\sqrt{2}(r_B + r_X)}$$
 
 This modular structure is significant due to the reasons:  
 Clarity- Each file has a single, well-defined role.  
